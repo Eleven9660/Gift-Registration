@@ -1,0 +1,2328 @@
+{
+  "version": "48.0.0",
+  "artifacts": {
+    "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/532a0f49d39c60ad2d2a3352b4cc32aea81f863f41bce002ea97a992bdad9491.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51.assets"
+      ],
+      "metadata": {
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/ComplianceGroupRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthComplianceGroupRole6A616C27"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/ComplianceGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthComplianceGroup40BCD520"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/AdminGroupRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthAdminGroupRole766878DC"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifyAuth/AdminGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthAdminGroupCC42FF04"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolB7BE5A1ARef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolB7BE5A1ARef"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolAppClientA2C37163Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolAppClientA2C37163Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPI42A6FA33"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPINONEDS684BF699"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent896904A5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent896904A5Arn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/CustomTableDeclarationTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/GetAttDeclarationTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttDeclarationTableStreamArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/GetAttDeclarationTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttDeclarationTableName"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationIAMRole"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationIAMRole7D922C13"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationIAMRole"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationTable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationTable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QuerygetDeclarationauth0Function/QuerygetDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetDeclarationauth0FunctionQuerygetDeclarationauth0FunctionAppSyncFunction61A65725"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QuerygetDeclarationpostAuth0Function/QuerygetDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetDeclarationpostAuth0FunctionQuerygetDeclarationpostAuth0FunctionAppSyncFunction0DACF365"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QueryGetDeclarationDataResolverFn/QueryGetDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetDeclarationDataResolverFnQueryGetDeclarationDataResolverFnAppSyncFunctionAA6812D0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/queryGetDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QuerylistDeclarationsauth0Function/QuerylistDeclarationsauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistDeclarationsauth0FunctionQuerylistDeclarationsauth0FunctionAppSyncFunction4B91ED07"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistDeclarationsauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QuerylistDeclarationspostAuth0Function/QuerylistDeclarationspostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistDeclarationspostAuth0FunctionQuerylistDeclarationspostAuth0FunctionAppSyncFunction51A07A7A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistDeclarationspostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/QueryListDeclarationsDataResolverFn/QueryListDeclarationsDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListDeclarationsDataResolverFnQueryListDeclarationsDataResolverFnAppSyncFunction9E500871"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListDeclarationsDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/queryListDeclarationsResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listDeclarations"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationcreateDeclarationinit0Function/MutationcreateDeclarationinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateDeclarationinit0FunctionMutationcreateDeclarationinit0FunctionAppSyncFunction0B8D62BC"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateDeclarationinit0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationcreateDeclarationauth0Function/MutationcreateDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateDeclarationauth0FunctionMutationcreateDeclarationauth0FunctionAppSyncFunction52940A31"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationcreateDeclarationpostAuth0Function/MutationcreateDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateDeclarationpostAuth0FunctionMutationcreateDeclarationpostAuth0FunctionAppSyncFunction5D580668"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationCreateDeclarationDataResolverFn/MutationCreateDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateDeclarationDataResolverFnMutationCreateDeclarationDataResolverFnAppSyncFunction92EB27E0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/mutationCreateDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationupdateDeclarationinit0Function/MutationupdateDeclarationinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateDeclarationinit0FunctionMutationupdateDeclarationinit0FunctionAppSyncFunctionE19B3C66"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateDeclarationinit0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationupdateDeclarationauth0Function/MutationupdateDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateDeclarationauth0FunctionMutationupdateDeclarationauth0FunctionAppSyncFunction9FB38B4F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationupdateDeclarationpostAuth0Function/MutationupdateDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateDeclarationpostAuth0FunctionMutationupdateDeclarationpostAuth0FunctionAppSyncFunction941D864B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationUpdateDeclarationDataResolverFn/MutationUpdateDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateDeclarationDataResolverFnMutationUpdateDeclarationDataResolverFnAppSyncFunctionA3F8CA23"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/mutationUpdateDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationdeleteDeclarationauth0Function/MutationdeleteDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteDeclarationauth0FunctionMutationdeleteDeclarationauth0FunctionAppSyncFunction8E4CEDA2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationdeleteDeclarationpostAuth0Function/MutationdeleteDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteDeclarationpostAuth0FunctionMutationdeleteDeclarationpostAuth0FunctionAppSyncFunction48346ECE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/MutationDeleteDeclarationDataResolverFn/MutationDeleteDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteDeclarationDataResolverFnMutationDeleteDeclarationDataResolverFnAppSyncFunction5372E0E2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/mutationDeleteDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononCreateDeclarationauth0Function/SubscriptiononCreateDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateDeclarationauth0FunctionSubscriptiononCreateDeclarationauth0FunctionAppSyncFunctionD11BAD25"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononCreateDeclarationpostAuth0Function/SubscriptiononCreateDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateDeclarationpostAuth0FunctionSubscriptiononCreateDeclarationpostAuth0FunctionAppSyncFunction07759A7D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptionOnCreateDeclarationDataResolverFn/SubscriptionOnCreateDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateDeclarationDataResolverFnSubscriptionOnCreateDeclarationDataResolverFnAppSyncFunction20D7E9F5"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/subscriptionOnCreateDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononUpdateDeclarationauth0Function/SubscriptiononUpdateDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateDeclarationauth0FunctionSubscriptiononUpdateDeclarationauth0FunctionAppSyncFunction5FBAB564"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononUpdateDeclarationpostAuth0Function/SubscriptiononUpdateDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateDeclarationpostAuth0FunctionSubscriptiononUpdateDeclarationpostAuth0FunctionAppSyncFunction28D1FB76"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptionOnUpdateDeclarationDataResolverFn/SubscriptionOnUpdateDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateDeclarationDataResolverFnSubscriptionOnUpdateDeclarationDataResolverFnAppSyncFunction02CF57DC"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/subscriptionOnUpdateDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononDeleteDeclarationauth0Function/SubscriptiononDeleteDeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteDeclarationauth0FunctionSubscriptiononDeleteDeclarationauth0FunctionAppSyncFunctionD8B3113D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteDeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptiononDeleteDeclarationpostAuth0Function/SubscriptiononDeleteDeclarationpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteDeclarationpostAuth0FunctionSubscriptiononDeleteDeclarationpostAuth0FunctionAppSyncFunction0E351571"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteDeclarationpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/SubscriptionOnDeleteDeclarationDataResolverFn/SubscriptionOnDeleteDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteDeclarationDataResolverFnSubscriptionOnDeleteDeclarationDataResolverFnAppSyncFunction0B0B0274"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/subscriptionOnDeleteDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteDeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteDeclaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/DeclarationOwnerDataResolverFn/DeclarationOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationOwnerDataResolverFnDeclarationOwnerDataResolverFnAppSyncFunction443CF6E0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/declarationOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declaration.owner"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9E49146DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent896904A5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9E49146DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplE5125C53"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationDataSource907D8193Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationDataSource907D8193Name"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationTable6C67645FTableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationTable6C67645FTableArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Declaration.NestedStack/Declaration.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataDeclarationNestedStackDeclarationNestedStackResource1BC43424"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Review"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Review"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/CustomTableReviewTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Review"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/GetAttReviewTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttReviewTableStreamArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/GetAttReviewTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttReviewTableName"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewIAMRole"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewIAMRole32E434A7"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewIAMRole"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewTable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewTable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QuerygetReviewauth0Function/QuerygetReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetReviewauth0FunctionQuerygetReviewauth0FunctionAppSyncFunction9FFA73D6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QuerygetReviewpostAuth0Function/QuerygetReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetReviewpostAuth0FunctionQuerygetReviewpostAuth0FunctionAppSyncFunction70679AB7"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QueryGetReviewDataResolverFn/QueryGetReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetReviewDataResolverFnQueryGetReviewDataResolverFnAppSyncFunction76F8DF3E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/queryGetReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QuerylistReviewsauth0Function/QuerylistReviewsauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistReviewsauth0FunctionQuerylistReviewsauth0FunctionAppSyncFunction6C85F3A3"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistReviewsauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QuerylistReviewspostAuth0Function/QuerylistReviewspostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistReviewspostAuth0FunctionQuerylistReviewspostAuth0FunctionAppSyncFunctionDFA68D3F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistReviewspostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/QueryListReviewsDataResolverFn/QueryListReviewsDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListReviewsDataResolverFnQueryListReviewsDataResolverFnAppSyncFunction90759574"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListReviewsDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/queryListReviewsResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listReviews"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationcreateReviewinit0Function/MutationcreateReviewinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateReviewinit0FunctionMutationcreateReviewinit0FunctionAppSyncFunction6511C198"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateReviewinit0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationcreateReviewauth0Function/MutationcreateReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateReviewauth0FunctionMutationcreateReviewauth0FunctionAppSyncFunction2524917F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationcreateReviewpostAuth0Function/MutationcreateReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateReviewpostAuth0FunctionMutationcreateReviewpostAuth0FunctionAppSyncFunction86C9EF32"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationCreateReviewDataResolverFn/MutationCreateReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateReviewDataResolverFnMutationCreateReviewDataResolverFnAppSyncFunction994E6D88"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/mutationCreateReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationupdateReviewinit0Function/MutationupdateReviewinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateReviewinit0FunctionMutationupdateReviewinit0FunctionAppSyncFunction5014AEF4"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateReviewinit0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationupdateReviewauth0Function/MutationupdateReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateReviewauth0FunctionMutationupdateReviewauth0FunctionAppSyncFunctionB2333FE5"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationupdateReviewpostAuth0Function/MutationupdateReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateReviewpostAuth0FunctionMutationupdateReviewpostAuth0FunctionAppSyncFunction31291088"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationUpdateReviewDataResolverFn/MutationUpdateReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateReviewDataResolverFnMutationUpdateReviewDataResolverFnAppSyncFunction92239F5C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/mutationUpdateReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationdeleteReviewauth0Function/MutationdeleteReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteReviewauth0FunctionMutationdeleteReviewauth0FunctionAppSyncFunction718844CE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationdeleteReviewpostAuth0Function/MutationdeleteReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteReviewpostAuth0FunctionMutationdeleteReviewpostAuth0FunctionAppSyncFunction0F593894"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/MutationDeleteReviewDataResolverFn/MutationDeleteReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteReviewDataResolverFnMutationDeleteReviewDataResolverFnAppSyncFunction3D5251EE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/mutationDeleteReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononCreateReviewauth0Function/SubscriptiononCreateReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateReviewauth0FunctionSubscriptiononCreateReviewauth0FunctionAppSyncFunction5B77175F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononCreateReviewpostAuth0Function/SubscriptiononCreateReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateReviewpostAuth0FunctionSubscriptiononCreateReviewpostAuth0FunctionAppSyncFunction15521604"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptionOnCreateReviewDataResolverFn/SubscriptionOnCreateReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateReviewDataResolverFnSubscriptionOnCreateReviewDataResolverFnAppSyncFunction8F341F6E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/subscriptionOnCreateReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononUpdateReviewauth0Function/SubscriptiononUpdateReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateReviewauth0FunctionSubscriptiononUpdateReviewauth0FunctionAppSyncFunction7D395BC9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononUpdateReviewpostAuth0Function/SubscriptiononUpdateReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateReviewpostAuth0FunctionSubscriptiononUpdateReviewpostAuth0FunctionAppSyncFunctionA8F246AD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptionOnUpdateReviewDataResolverFn/SubscriptionOnUpdateReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateReviewDataResolverFnSubscriptionOnUpdateReviewDataResolverFnAppSyncFunction6618B778"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/subscriptionOnUpdateReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononDeleteReviewauth0Function/SubscriptiononDeleteReviewauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteReviewauth0FunctionSubscriptiononDeleteReviewauth0FunctionAppSyncFunctionFD9BE9D2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteReviewauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptiononDeleteReviewpostAuth0Function/SubscriptiononDeleteReviewpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteReviewpostAuth0FunctionSubscriptiononDeleteReviewpostAuth0FunctionAppSyncFunction48FB79C6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteReviewpostAuth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/SubscriptionOnDeleteReviewDataResolverFn/SubscriptionOnDeleteReviewDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteReviewDataResolverFnSubscriptionOnDeleteReviewDataResolverFnAppSyncFunction93417C25"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteReviewDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/subscriptionOnDeleteReviewResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteReviewResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteReview"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/ReviewOwnerDataResolverFn/ReviewOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewOwnerDataResolverFnReviewOwnerDataResolverFnAppSyncFunctionAA3E8C9E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reviewOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Review.owner"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9E49146DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent896904A5Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource9E49146DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplE5125C53"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewDataSource25F7170AName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewDataSource25F7170AName"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewTable24F193EFTableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewTable24F193EFTableArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/Review.NestedStack/Review.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataReviewNestedStackReviewNestedStackResource3212A798"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/Declarationreviewsauth0Function/Declarationreviewsauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Declarationreviewsauth0FunctionDeclarationreviewsauth0FunctionAppSyncFunctionD0C3CAEC"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declarationreviewsauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/DeclarationReviewsDataResolverFn/DeclarationReviewsDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationReviewsDataResolverFnDeclarationReviewsDataResolverFnAppSyncFunctionCB954F5B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "DeclarationReviewsDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/declarationReviewsResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeclarationreviewsResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Declaration.reviews"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/Reviewdeclarationauth0Function/Reviewdeclarationauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Reviewdeclarationauth0FunctionReviewdeclarationauth0FunctionAppSyncFunctionEDC1832A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Reviewdeclarationauth0Function"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/ReviewDeclarationDataResolverFn/ReviewDeclarationDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewDeclarationDataResolverFnReviewDeclarationDataResolverFnAppSyncFunctionFCEDDFB0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ReviewDeclarationDataResolverFn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reviewDeclarationResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReviewdeclarationResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Review.declaration"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPINONEDS51953F41Name"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewNestedStackReviewNestedStackResourceE856D2A7Outputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewDataSource25F7170AName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewNestedStackReviewNestedStackResourceE856D2A7Outputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewDataSource25F7170AName"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewNestedStackReviewNestedStackResourceE856D2A7Outputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewTable24F193EFTableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewNestedStackReviewNestedStackResourceE856D2A7Outputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataReviewReviewTable24F193EFTableArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationNestedStackDeclarationNestedStackResourceC87EB044Outputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationDataSource907D8193Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationNestedStackDeclarationNestedStackResourceC87EB044Outputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarati2045BD5C"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationNestedStackDeclarationNestedStackResourceC87EB044Outputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclarationTable6C67645FTableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationNestedStackDeclarationNestedStackResourceC87EB044Outputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataDeclarationDeclaratiB1076E38"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/ConnectionStack.NestedStack/ConnectionStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataConnectionStackNestedStackConnectionStackNestedStackResourceAB0F312B"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/modelIntrospectionSchemaBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketF566B665"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/modelIntrospectionSchemaBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketPolicy4DAB0D15"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/modelIntrospectionSchemaBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketAutoDeleteObjectsCustomResourceFE57309F"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentAwsCliLayer13C432F7"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/modelIntrospectionSchemaBucketDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentCustomResource1536MiB104B97EC"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMABUCKETNAMEParameter47BF4F44"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMAKEYParameterB6AEAE8A"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATADEFAULTNAMEParameterE7C23CC4"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolB7BE5A1ARef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthUserPoolB7BE5A1ARef"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthauthenticatedUserRole9970C886Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthunauthenticatedUserRoleA086D4E1Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/reference-to-amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputs.amplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authNestedStackauthNestedStackResource03BC2A2DOutputsamplifygiftcompliancesystemisaackironjisandboxf64aa64c51authamplifyAuthIdentityPoolCD011F11Ref"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBGraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataGraphQLAPIA82FCADBGraphQLUrl"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data/amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB315AE8F1DestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifygiftcompliancesystemisaackironjisandboxf64aa64c51dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB315AE8F1DestinationBucketArn"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-giftcompliancesystem-isaackironji-sandbox-f64aa64c51"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "aws-cdk-lib/feature-flag-report": {
+      "type": "cdk:feature-flag-report",
+      "properties": {
+        "module": "aws-cdk-lib",
+        "flags": {
+          "@aws-cdk/aws-signer:signingProfileNamePassedToCfn": {
+            "recommendedValue": true,
+            "explanation": "Pass signingProfileName to CfnSigningProfile"
+          },
+          "@aws-cdk/core:newStyleStackSynthesis": {
+            "recommendedValue": true,
+            "explanation": "Switch to new stack synthesis method which enables CI/CD",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:stackRelativeExports": {
+            "recommendedValue": true,
+            "explanation": "Name exports based on the construct paths relative to the stack, rather than the global construct path",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:secGroupsDisablesImplicitOpenListener": {
+            "recommendedValue": true,
+            "explanation": "Disable implicit openListener when custom security groups are provided"
+          },
+          "@aws-cdk/aws-rds:lowercaseDbIdentifier": {
+            "recommendedValue": true,
+            "explanation": "Force lowercasing of RDS Cluster names in CDK",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": {
+            "recommendedValue": true,
+            "explanation": "Allow adding/removing multiple UsagePlanKeys independently",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeVersionProps": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the  `fn.currentVersion`.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-lambda:recognizeLayerVersion": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to opt in to the updated logical id calculation for Lambda Version created using the `fn.currentVersion`."
+          },
+          "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have cloudfront distributions use the security policy TLSv1.2_2021 by default.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:checkSecretUsage": {
+            "recommendedValue": true,
+            "explanation": "Enable this flag to make it impossible to accidentally use SecretValues in unsafe locations"
+          },
+          "@aws-cdk/core:target-partitions": {
+            "recommendedValue": [
+              "aws",
+              "aws-cn"
+            ],
+            "explanation": "What regions to include in lookup tables of environment agnostic stacks"
+          },
+          "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": {
+            "recommendedValue": true,
+            "explanation": "ECS extensions will automatically add an `awslogs` driver if no logging is specified"
+          },
+          "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to have Launch Templates generated by the `InstanceRequireImdsv2Aspect` use unique names."
+          },
+          "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": {
+            "recommendedValue": true,
+            "explanation": "ARN format used by ECS. In the new ARN format, the cluster name is part of the resource ID."
+          },
+          "@aws-cdk/aws-iam:minimizePolicies": {
+            "recommendedValue": true,
+            "explanation": "Minimize IAM policies by combining Statements"
+          },
+          "@aws-cdk/core:validateSnapshotRemovalPolicy": {
+            "recommendedValue": true,
+            "explanation": "Error on snapshot removal policies on resources that do not support it."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": {
+            "recommendedValue": true,
+            "explanation": "Generate key aliases that include the stack name"
+          },
+          "@aws-cdk/aws-s3:createDefaultLoggingPolicy": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature flag to create an S3 bucket policy by default in cases where an AWS service would automatically create the Policy if one does not exist."
+          },
+          "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": {
+            "recommendedValue": true,
+            "explanation": "Restrict KMS key policy for encrypted Queues a bit more"
+          },
+          "@aws-cdk/aws-apigateway:disableCloudWatchRole": {
+            "recommendedValue": true,
+            "explanation": "Make default CloudWatch Role behavior safe for multiple API Gateways in one environment"
+          },
+          "@aws-cdk/core:enablePartitionLiterals": {
+            "recommendedValue": true,
+            "explanation": "Make ARNs concrete if AWS partition is known"
+          },
+          "@aws-cdk/aws-events:eventsTargetQueueSameAccount": {
+            "recommendedValue": true,
+            "explanation": "Event Rules may only push to encrypted SQS queues in the same account"
+          },
+          "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": {
+            "recommendedValue": true,
+            "explanation": "Avoid setting the \"ECS\" deployment controller when adding a circuit breaker"
+          },
+          "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": {
+            "recommendedValue": true,
+            "explanation": "Enable this feature to create default policy names for imported roles that depend on the stack the role is in."
+          },
+          "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": {
+            "recommendedValue": true,
+            "explanation": "Use S3 Bucket Policy instead of ACLs for Server Access Logging"
+          },
+          "@aws-cdk/aws-route53-patters:useCertificate": {
+            "recommendedValue": true,
+            "explanation": "Use the official `Certificate` resource instead of `DnsValidatedCertificate`"
+          },
+          "@aws-cdk/customresources:installLatestAwsSdkDefault": {
+            "recommendedValue": false,
+            "explanation": "Whether to install the latest SDK by default in AwsCustomResource"
+          },
+          "@aws-cdk/aws-rds:databaseProxyUniqueResourceName": {
+            "recommendedValue": true,
+            "explanation": "Use unique resource name for Database Proxy"
+          },
+          "@aws-cdk/aws-codedeploy:removeAlarmsFromDeploymentGroup": {
+            "recommendedValue": true,
+            "explanation": "Remove CloudWatch alarms from deployment group"
+          },
+          "@aws-cdk/aws-apigateway:authorizerChangeDeploymentLogicalId": {
+            "recommendedValue": true,
+            "explanation": "Include authorizer configuration in the calculation of the API deployment logical ID."
+          },
+          "@aws-cdk/aws-ec2:launchTemplateDefaultUserData": {
+            "recommendedValue": true,
+            "explanation": "Define user data for a launch template by default when a machine image is provided."
+          },
+          "@aws-cdk/aws-secretsmanager:useAttachedSecretResourcePolicyForSecretTargetAttachments": {
+            "recommendedValue": true,
+            "explanation": "SecretTargetAttachments uses the ResourcePolicy of the attached Secret."
+          },
+          "@aws-cdk/aws-redshift:columnId": {
+            "recommendedValue": true,
+            "explanation": "Whether to use an ID to track Redshift column changes"
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:enableEmrServicePolicyV2": {
+            "recommendedValue": true,
+            "explanation": "Enable AmazonEMRServicePolicy_v2 managed policies"
+          },
+          "@aws-cdk/aws-ec2:restrictDefaultSecurityGroup": {
+            "recommendedValue": true,
+            "explanation": "Restrict access to the VPC default security group"
+          },
+          "@aws-cdk/aws-apigateway:requestValidatorUniqueId": {
+            "recommendedValue": true,
+            "explanation": "Generate a unique id for each RequestValidator added to a method"
+          },
+          "@aws-cdk/aws-kms:aliasNameRef": {
+            "recommendedValue": true,
+            "explanation": "KMS Alias name and keyArn will have implicit reference to KMS Key"
+          },
+          "@aws-cdk/aws-kms:applyImportedAliasPermissionsToPrincipal": {
+            "recommendedValue": true,
+            "explanation": "Enable grant methods on Aliases imported by name to use kms:ResourceAliases condition"
+          },
+          "@aws-cdk/aws-autoscaling:generateLaunchTemplateInsteadOfLaunchConfig": {
+            "recommendedValue": true,
+            "explanation": "Generate a launch template when creating an AutoScalingGroup"
+          },
+          "@aws-cdk/core:includePrefixInUniqueNameGeneration": {
+            "recommendedValue": true,
+            "explanation": "Include the stack prefix in the stack name generation process"
+          },
+          "@aws-cdk/aws-efs:denyAnonymousAccess": {
+            "recommendedValue": true,
+            "explanation": "EFS denies anonymous clients accesses"
+          },
+          "@aws-cdk/aws-opensearchservice:enableOpensearchMultiAzWithStandby": {
+            "recommendedValue": true,
+            "explanation": "Enables support for Multi-AZ with Standby deployment for opensearch domains"
+          },
+          "@aws-cdk/aws-lambda-nodejs:useLatestRuntimeVersion": {
+            "recommendedValue": true,
+            "explanation": "Enables aws-lambda-nodejs.Function to use the latest available NodeJs runtime as the default"
+          },
+          "@aws-cdk/aws-efs:mountTargetOrderInsensitiveLogicalId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, mount targets will have a stable logicalId that is linked to the associated subnet."
+          },
+          "@aws-cdk/aws-rds:auroraClusterChangeScopeOfInstanceParameterGroupWithEachParameters": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a scope of InstanceParameterGroup for AuroraClusterInstance with each parameters will change."
+          },
+          "@aws-cdk/aws-appsync:useArnForSourceApiAssociationIdentifier": {
+            "recommendedValue": true,
+            "explanation": "When enabled, will always use the arn for identifiers for CfnSourceApiAssociation in the GraphqlApi construct rather than id."
+          },
+          "@aws-cdk/aws-rds:preventRenderingDeprecatedCredentials": {
+            "recommendedValue": true,
+            "explanation": "When enabled, creating an RDS database cluster from a snapshot will only render credentials for snapshot credentials."
+          },
+          "@aws-cdk/aws-codepipeline-actions:useNewDefaultBranchForCodeCommitSource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the CodeCommit source action is using the default branch name 'main'."
+          },
+          "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the logical ID of a Lambda permission for a Lambda action includes an alarm ID."
+          },
+          "@aws-cdk/aws-codepipeline:crossAccountKeysDefaultValueToFalse": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default value for crossAccountKeys to false."
+          },
+          "@aws-cdk/aws-codepipeline:defaultPipelineTypeToV2": {
+            "recommendedValue": true,
+            "explanation": "Enables Pipeline to set the default pipeline type to V2."
+          },
+          "@aws-cdk/aws-kms:reduceCrossAccountRegionPolicyScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, IAM Policy created from KMS key grant will reduce the resource scope to this key only."
+          },
+          "@aws-cdk/pipelines:reduceAssetRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from PipelineAssetsFileRole trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-eks:nodegroupNameAttribute": {
+            "recommendedValue": true,
+            "explanation": "When enabled, nodegroupName attribute of the provisioned EKS NodeGroup will not have the cluster name prefix."
+          },
+          "@aws-cdk/aws-ec2:ebsDefaultGp3Volume": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default volume type of the EBS volume will be GP3"
+          },
+          "@aws-cdk/aws-ecs:removeDefaultDeploymentAlarm": {
+            "recommendedValue": true,
+            "explanation": "When enabled, remove default deployment alarm settings"
+          },
+          "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": {
+            "recommendedValue": false,
+            "explanation": "When enabled, the custom resource used for `AwsCustomResource` will configure the `logApiResponseData` property as true by default"
+          },
+          "@aws-cdk/aws-s3:keepNotificationInImportedBucket": {
+            "recommendedValue": false,
+            "explanation": "When enabled, Adding notifications to a bucket in the current stack will not remove notification from imported stack."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:useNewS3UriParametersForBedrockInvokeModelTask": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use new props for S3 URI field in task definition of state machine for bedrock invoke model.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/core:explicitStackTags": {
+            "recommendedValue": true,
+            "explanation": "When enabled, stack tags need to be assigned explicitly on a Stack."
+          },
+          "@aws-cdk/aws-ecs:reduceEc2FargateCloudWatchPermissions": {
+            "recommendedValue": true,
+            "explanation": "When enabled, we will only grant the necessary permissions when users specify cloudwatch log group through logConfiguration"
+          },
+          "@aws-cdk/aws-dynamodb:resourcePolicyPerReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled will allow you to specify a resource policy per replica, and not copy the source table policy to all replicas"
+          },
+          "@aws-cdk/aws-ec2:ec2SumTImeoutEnabled": {
+            "recommendedValue": true,
+            "explanation": "When enabled, initOptions.timeout and resourceSignalTimeout values will be summed together."
+          },
+          "@aws-cdk/aws-appsync:appSyncGraphQLAPIScopeLambdaPermission": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a Lambda authorizer Permission created when using GraphqlApi will be properly scoped with a SourceArn."
+          },
+          "@aws-cdk/aws-rds:setCorrectValueForDatabaseInstanceReadReplicaInstanceResourceId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the value of property `instanceResourceId` in construct `DatabaseInstanceReadReplica` will be set to the correct value which is `DbiResourceId` instead of currently `DbInstanceArn`"
+          },
+          "@aws-cdk/core:cfnIncludeRejectComplexResourceUpdateCreatePolicyIntrinsics": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CFN templates added with `cfn-include` will error if the template contains Resource Update or Create policies with CFN Intrinsics that include non-primitive values."
+          },
+          "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": {
+            "recommendedValue": true,
+            "explanation": "When enabled, both `@aws-sdk` and `@smithy` packages will be excluded from the Lambda Node.js 18.x runtime to prevent version mismatches in bundled applications."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resource of IAM Run Ecs policy generated by SFN EcsRunTask will reference the definition, instead of constructing ARN."
+          },
+          "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the BastionHost construct will use the latest Amazon Linux 2023 AMI, instead of Amazon Linux 2."
+          },
+          "@aws-cdk/core:aspectStabilization": {
+            "recommendedValue": true,
+            "explanation": "When enabled, a stabilization loop will be run when invoking Aspects during synthesis.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-route53-targets:userPoolDomainNameMethodWithoutCustomResource": {
+            "recommendedValue": true,
+            "explanation": "When enabled, use a new method for DNS Name of user pool domain target without creating a custom resource."
+          },
+          "@aws-cdk/aws-elasticloadbalancingV2:albDualstackWithoutPublicIpv4SecurityGroupRulesDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default security group ingress rules will allow IPv6 ingress from anywhere"
+          },
+          "@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the default behaviour of OIDC provider will reject unauthorized connections"
+          },
+          "@aws-cdk/core:enableAdditionalMetadataCollection": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will expand the scope of usage data collected to better inform CDK development and improve communication for security concerns and emerging issues."
+          },
+          "@aws-cdk/aws-lambda:createNewPoliciesWithAddToRolePolicy": {
+            "recommendedValue": false,
+            "explanation": "[Deprecated] When enabled, Lambda will create new inline policies with AddToRolePolicy instead of adding to the Default Policy Statement"
+          },
+          "@aws-cdk/aws-s3:setUniqueReplicationRoleName": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK will automatically generate a unique role name that is used for s3 object replication."
+          },
+          "@aws-cdk/pipelines:reduceStageRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "Remove the root account principal from Stage addActions trust policy",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-events:requireEventBusPolicySid": {
+            "recommendedValue": true,
+            "explanation": "When enabled, grantPutEventsTo() will use resource policies with Statement IDs for service principals."
+          },
+          "@aws-cdk/core:aspectPrioritiesMutating": {
+            "recommendedValue": true,
+            "explanation": "When set to true, Aspects added by the construct library on your behalf will be given a priority of MUTATING."
+          },
+          "@aws-cdk/aws-dynamodb:retainTableReplica": {
+            "recommendedValue": true,
+            "explanation": "When enabled, table replica will be default to the removal policy of source table unless specified otherwise."
+          },
+          "@aws-cdk/cognito:logUserPoolClientSecretValue": {
+            "recommendedValue": false,
+            "explanation": "When disabled, the value of the user pool client secret will not be logged in the custom resource lambda function logs."
+          },
+          "@aws-cdk/pipelines:reduceCrossAccountActionRoleTrustScope": {
+            "recommendedValue": true,
+            "explanation": "When enabled, scopes down the trust policy for the cross-account action role",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-stepfunctions:useDistributedMapResultWriterV2": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the resultWriterV2 property of DistributedMap will be used insted of resultWriter"
+          },
+          "@aws-cdk/s3-notifications:addS3TrustKeyPolicyForSnsSubscriptions": {
+            "recommendedValue": true,
+            "explanation": "Add an S3 trust policy to a KMS key resource policy for SNS subscriptions."
+          },
+          "@aws-cdk/aws-ec2:requirePrivateSubnetsForEgressOnlyInternetGateway": {
+            "recommendedValue": true,
+            "explanation": "When enabled, the EgressOnlyGateway resource is only created if private subnets are defined in the dual-stack VPC."
+          },
+          "@aws-cdk/aws-ec2-alpha:useResourceIdForVpcV2Migration": {
+            "recommendedValue": false,
+            "explanation": "When enabled, use resource IDs for VPC V2 migration"
+          },
+          "@aws-cdk/aws-s3:publicAccessBlockedByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, setting any combination of options for BlockPublicAccess will automatically set true for any options not defined."
+          },
+          "@aws-cdk/aws-lambda:useCdkManagedLogGroup": {
+            "recommendedValue": true,
+            "explanation": "When enabled, CDK creates and manages loggroup for the lambda function"
+          },
+          "@aws-cdk/aws-elasticloadbalancingv2:networkLoadBalancerWithSecurityGroupByDefault": {
+            "recommendedValue": true,
+            "explanation": "When enabled, Network Load Balancer will be created with a security group by default."
+          },
+          "@aws-cdk/aws-stepfunctions-tasks:httpInvokeDynamicJsonPathEndpoint": {
+            "recommendedValue": true,
+            "explanation": "When enabled, allows using a dynamic apiEndpoint with JSONPath format in HttpInvoke tasks.",
+            "unconfiguredBehavesLike": {
+              "v2": true
+            }
+          },
+          "@aws-cdk/aws-ecs-patterns:uniqueTargetGroupId": {
+            "recommendedValue": true,
+            "explanation": "When enabled, ECS patterns will generate unique target group IDs to prevent conflicts during load balancer replacement"
+          },
+          "@aws-cdk/aws-route53-patterns:useDistribution": {
+            "recommendedValue": true,
+            "explanation": "Use the `Distribution` resource instead of `CloudFrontWebDistribution`"
+          }
+        }
+      }
+    }
+  },
+  "minimumCliVersion": "2.1033.0"
+}

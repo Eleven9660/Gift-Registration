@@ -1,0 +1,415 @@
+enum DeclarationStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+  ESCALATED
+}
+
+enum GiftType {
+  CASH
+  PHYSICAL
+  IN_KIND
+}
+
+enum Direction {
+  RECEIVED
+  ISSUED
+}
+
+type Declaration @aws_iam @aws_cognito_user_pools {
+  direction: Direction!
+  status: DeclarationStatus
+  giftType: GiftType!
+  description: String!
+  estimatedValue: Float!
+  giftDate: AWSDate!
+  counterpartyName: String!
+  counterpartyOrg: String!
+  counterpartyRelationship: String!
+  justification: String!
+  reviews(filter: ModelReviewFilterInput, sortDirection: ModelSortDirection, limit: Int, nextToken: String): ModelReviewConnection
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+type Review @aws_iam @aws_cognito_user_pools {
+  declarationId: ID!
+  declaration: Declaration
+  comment: String
+  decision: ReviewDecision
+  reviewerId: String
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+enum ReviewDecision {
+  APPROVED
+  REJECTED
+  REQUEST_INFO
+}
+
+input AmplifyAIConversationTurnErrorInput {
+  errorType: String!
+  message: String!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelDeclarationConnection @aws_iam @aws_cognito_user_pools {
+  items: [Declaration]!
+  nextToken: String
+}
+
+input ModelDirectionInput {
+  eq: Direction
+  ne: Direction
+}
+
+input ModelDeclarationStatusInput {
+  eq: DeclarationStatus
+  ne: DeclarationStatus
+}
+
+input ModelGiftTypeInput {
+  eq: GiftType
+  ne: GiftType
+}
+
+input ModelDeclarationFilterInput {
+  direction: ModelDirectionInput
+  status: ModelDeclarationStatusInput
+  giftType: ModelGiftTypeInput
+  description: ModelStringInput
+  estimatedValue: ModelFloatInput
+  giftDate: ModelStringInput
+  counterpartyName: ModelStringInput
+  counterpartyOrg: ModelStringInput
+  counterpartyRelationship: ModelStringInput
+  justification: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelDeclarationFilterInput]
+  or: [ModelDeclarationFilterInput]
+  not: ModelDeclarationFilterInput
+  owner: ModelStringInput
+}
+
+type Query {
+  getDeclaration(id: ID!): Declaration @aws_iam @aws_cognito_user_pools
+  listDeclarations(filter: ModelDeclarationFilterInput, limit: Int, nextToken: String): ModelDeclarationConnection @aws_iam @aws_cognito_user_pools
+  getReview(id: ID!): Review @aws_iam @aws_cognito_user_pools
+  listReviews(filter: ModelReviewFilterInput, limit: Int, nextToken: String): ModelReviewConnection @aws_iam @aws_cognito_user_pools
+}
+
+input ModelDeclarationConditionInput {
+  direction: ModelDirectionInput
+  status: ModelDeclarationStatusInput
+  giftType: ModelGiftTypeInput
+  description: ModelStringInput
+  estimatedValue: ModelFloatInput
+  giftDate: ModelStringInput
+  counterpartyName: ModelStringInput
+  counterpartyOrg: ModelStringInput
+  counterpartyRelationship: ModelStringInput
+  justification: ModelStringInput
+  and: [ModelDeclarationConditionInput]
+  or: [ModelDeclarationConditionInput]
+  not: ModelDeclarationConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateDeclarationInput {
+  direction: Direction!
+  status: DeclarationStatus
+  giftType: GiftType!
+  description: String!
+  estimatedValue: Float!
+  giftDate: AWSDate!
+  counterpartyName: String!
+  counterpartyOrg: String!
+  counterpartyRelationship: String!
+  justification: String!
+  id: ID
+}
+
+input UpdateDeclarationInput {
+  direction: Direction
+  status: DeclarationStatus
+  giftType: GiftType
+  description: String
+  estimatedValue: Float
+  giftDate: AWSDate
+  counterpartyName: String
+  counterpartyOrg: String
+  counterpartyRelationship: String
+  justification: String
+  id: ID!
+}
+
+input DeleteDeclarationInput {
+  id: ID!
+}
+
+type Mutation {
+  createDeclaration(input: CreateDeclarationInput!, condition: ModelDeclarationConditionInput): Declaration @aws_iam @aws_cognito_user_pools
+  updateDeclaration(input: UpdateDeclarationInput!, condition: ModelDeclarationConditionInput): Declaration @aws_iam @aws_cognito_user_pools
+  deleteDeclaration(input: DeleteDeclarationInput!, condition: ModelDeclarationConditionInput): Declaration @aws_iam @aws_cognito_user_pools
+  createReview(input: CreateReviewInput!, condition: ModelReviewConditionInput): Review @aws_iam @aws_cognito_user_pools
+  updateReview(input: UpdateReviewInput!, condition: ModelReviewConditionInput): Review @aws_iam @aws_cognito_user_pools
+  deleteReview(input: DeleteReviewInput!, condition: ModelReviewConditionInput): Review @aws_iam @aws_cognito_user_pools
+}
+
+input ModelSubscriptionDeclarationFilterInput {
+  direction: ModelSubscriptionStringInput
+  status: ModelSubscriptionStringInput
+  giftType: ModelSubscriptionStringInput
+  description: ModelSubscriptionStringInput
+  estimatedValue: ModelSubscriptionFloatInput
+  giftDate: ModelSubscriptionStringInput
+  counterpartyName: ModelSubscriptionStringInput
+  counterpartyOrg: ModelSubscriptionStringInput
+  counterpartyRelationship: ModelSubscriptionStringInput
+  justification: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionDeclarationFilterInput]
+  or: [ModelSubscriptionDeclarationFilterInput]
+  owner: ModelStringInput
+}
+
+type Subscription {
+  onCreateDeclaration(filter: ModelSubscriptionDeclarationFilterInput, owner: String): Declaration @aws_subscribe(mutations: ["createDeclaration"]) @aws_iam @aws_cognito_user_pools
+  onUpdateDeclaration(filter: ModelSubscriptionDeclarationFilterInput, owner: String): Declaration @aws_subscribe(mutations: ["updateDeclaration"]) @aws_iam @aws_cognito_user_pools
+  onDeleteDeclaration(filter: ModelSubscriptionDeclarationFilterInput, owner: String): Declaration @aws_subscribe(mutations: ["deleteDeclaration"]) @aws_iam @aws_cognito_user_pools
+  onCreateReview(filter: ModelSubscriptionReviewFilterInput, owner: String): Review @aws_subscribe(mutations: ["createReview"]) @aws_iam @aws_cognito_user_pools
+  onUpdateReview(filter: ModelSubscriptionReviewFilterInput, owner: String): Review @aws_subscribe(mutations: ["updateReview"]) @aws_iam @aws_cognito_user_pools
+  onDeleteReview(filter: ModelSubscriptionReviewFilterInput, owner: String): Review @aws_subscribe(mutations: ["deleteReview"]) @aws_iam @aws_cognito_user_pools
+}
+
+type ModelReviewConnection @aws_iam @aws_cognito_user_pools {
+  items: [Review]!
+  nextToken: String
+}
+
+input ModelReviewDecisionInput {
+  eq: ReviewDecision
+  ne: ReviewDecision
+}
+
+input ModelReviewFilterInput {
+  declarationId: ModelIDInput
+  comment: ModelStringInput
+  decision: ModelReviewDecisionInput
+  reviewerId: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelReviewFilterInput]
+  or: [ModelReviewFilterInput]
+  not: ModelReviewFilterInput
+  owner: ModelStringInput
+}
+
+input ModelReviewConditionInput {
+  declarationId: ModelIDInput
+  comment: ModelStringInput
+  decision: ModelReviewDecisionInput
+  reviewerId: ModelStringInput
+  and: [ModelReviewConditionInput]
+  or: [ModelReviewConditionInput]
+  not: ModelReviewConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateReviewInput {
+  declarationId: ID!
+  comment: String
+  decision: ReviewDecision
+  reviewerId: String
+  id: ID
+}
+
+input UpdateReviewInput {
+  declarationId: ID
+  comment: String
+  decision: ReviewDecision
+  reviewerId: String
+  id: ID!
+}
+
+input DeleteReviewInput {
+  id: ID!
+}
+
+input ModelSubscriptionReviewFilterInput {
+  declarationId: ModelSubscriptionIDInput
+  comment: ModelSubscriptionStringInput
+  decision: ModelSubscriptionStringInput
+  reviewerId: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionReviewFilterInput]
+  or: [ModelSubscriptionReviewFilterInput]
+  owner: ModelStringInput
+}

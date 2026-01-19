@@ -1,0 +1,53 @@
+enum DeclarationStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+  ESCALATED
+}
+
+enum GiftType {
+  CASH
+  PHYSICAL
+  IN_KIND
+}
+
+enum Direction {
+  RECEIVED
+  ISSUED
+}
+
+type Declaration @model @auth(rules: [{allow: owner, ownerField: "owner"},
+  {allow: groups, operations: [read, update], groups: ["Compliance"]},
+  {allow: groups, operations: [read, update, delete], groups: ["Admin"]}])
+{
+  direction: Direction!
+  status: DeclarationStatus
+  giftType: GiftType!
+  description: String!
+  estimatedValue: Float!
+  giftDate: AWSDate!
+  counterpartyName: String!
+  counterpartyOrg: String!
+  counterpartyRelationship: String!
+  justification: String!
+  reviews: [Review] @hasMany(references: ["declarationId"])
+}
+
+type Review @model @auth(rules: [{allow: groups, operations: [create, read, update], groups: ["Compliance"]},
+  {allow: groups, operations: [create, read, update, delete], groups: ["Admin"]},
+  {allow: owner, operations: [read], ownerField: "owner"}])
+{
+  declarationId: ID!
+  declaration: Declaration @belongsTo(references: ["declarationId"])
+  comment: String
+  decision: ReviewDecision
+  reviewerId: String
+}
+
+enum ReviewDecision {
+  APPROVED
+  REJECTED
+  REQUEST_INFO
+}
