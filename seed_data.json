@@ -1,0 +1,38 @@
+[
+  {
+    "direction": "RECEIVED",
+    "status": "APPROVED",
+    "giftType": "PHYSICAL",
+    "description": "Bottle of 18yr Single Malt Whisky",
+    "estimatedValue": 15000,
+    "giftDate": "2023-12-20",
+    "counterpartyName": "John Doe",
+    "counterpartyOrg": "Acme Corp",
+    "counterpartyRelationship": "Supplier",
+    "justification": "Christmas gift exchanged during annual review meeting."
+  },
+  {
+    "direction": "ISSUED",
+    "status": "SUBMITTED",
+    "giftType": "IN_KIND",
+    "description": "Lunch at Carnivore",
+    "estimatedValue": 8000,
+    "giftDate": "2024-01-15",
+    "counterpartyName": "Jane Smith",
+    "counterpartyOrg": "Regulator Body",
+    "counterpartyRelationship": "Government Official",
+    "justification": "Project kick-off lunch."
+  },
+  {
+    "direction": "RECEIVED",
+    "status": "REJECTED",
+    "giftType": "CASH",
+    "description": "Envelope with cash",
+    "estimatedValue": 50000,
+    "giftDate": "2024-01-10",
+    "counterpartyName": "Unknown",
+    "counterpartyOrg": "Shadow Corp",
+    "counterpartyRelationship": "Bidder",
+    "justification": "Left at reception for me. Rejected immediately."
+  }
+]
